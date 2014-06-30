@@ -21,3 +21,9 @@ SHOW FIELDS from table_name;
 ```sql
 SHOW INDEXES FROM table_name;
 ```
+
+### Insert row
+
+```sql
+INSERT INTO table_name (column_name_1, ...) VALUES (value_1, ...);
+```
