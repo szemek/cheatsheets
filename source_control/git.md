@@ -26,6 +26,10 @@ Some git commands gathered.
 
 `git merge branch --no-ff`
 
+#### Amend commit & reset author
+
+`git commit --amend --reset-author`
+
 #### Add removed files
 
 `git add -A .`
