@@ -88,6 +88,8 @@ git filter-branch --commit-filter '
 
 `git filter-branch -f --tree-filter 'rm -rf path/to/files' HEAD`
 
+Add `--prune-empty` to remove empty commits.
+
 #### Update local branch when remote was pushed with `--force`
 
 ```
