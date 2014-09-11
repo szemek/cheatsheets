@@ -27,3 +27,15 @@ SHOW INDEXES FROM table_name;
 ```sql
 INSERT INTO table_name (column_name_1, ...) VALUES (value_1, ...);
 ```
+
+### List users
+
+```sql
+SELECT user, host FROM mysql.user;
+```
+
+### Show privileges
+
+```sql
+SHOW GRANTS FOR 'user'@'localhost';
+```
