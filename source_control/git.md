@@ -124,6 +124,12 @@ git fetch origin branch:branch
 git update-index --assume-unchanged filename
 ```
 
+#### Set pager to display whole diff
+
+```
+git config --global core.pager cat
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
