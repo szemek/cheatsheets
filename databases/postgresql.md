@@ -1,3 +1,9 @@
+### PostgreSQL interactive terminal
+
+```
+psql
+```
+
 ### List of databases
 
 ```
