@@ -136,6 +136,12 @@ git config --global core.pager cat
 git reflog expire --expire=0 --all
 ```
 
+#### Delete ref after filter-branch
+
+```
+git update-ref -d refs/original/refs/heads/master
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
