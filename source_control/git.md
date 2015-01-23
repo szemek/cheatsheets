@@ -130,6 +130,12 @@ git update-index --assume-unchanged filename
 git config --global core.pager cat
 ```
 
+#### Clear reflog
+
+```
+git reflog expire --expire=0 --all
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
