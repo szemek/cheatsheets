@@ -50,10 +50,6 @@ Some git commands gathered.
 
 `git clean -fd`
 
-#### Set rebase by default
-
-`git config --global branch.autosetuprebase always`
-
 #### Push branch & set upstream reference
 
 `git push -u origin branch`
@@ -146,3 +142,5 @@ git update-ref -d refs/original/refs/heads/master
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
   * [hub](https://github.com/github/hub)
+  * [git-up](https://github.com/aanand/git-up)
+  * [git_tracker](https://github.com/stevenharman/git_tracker)
