@@ -138,6 +138,12 @@ git reflog expire --expire=0 --all
 git update-ref -d refs/original/refs/heads/master
 ```
 
+#### Trace the evolution of the line range
+
+```
+git log -L <start>,<end>:<file>
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
