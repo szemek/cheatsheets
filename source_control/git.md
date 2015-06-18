@@ -144,6 +144,12 @@ git update-ref -d refs/original/refs/heads/master
 git log -L <start>,<end>:<file>
 ```
 
+#### Stop tracking a remote branch
+
+```
+git branch -d -r origin/<remote branch name>
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
