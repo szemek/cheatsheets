@@ -39,3 +39,9 @@ SELECT user, host FROM mysql.user;
 ```sql
 SHOW GRANTS FOR 'user'@'localhost';
 ```
+
+### Get info about tables
+
+```sql
+SELECT * FROM information_schema.TABLES;
+```
