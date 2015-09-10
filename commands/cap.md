@@ -1,5 +1,11 @@
 ## cap
 
+## List tasks
+
+```
+cap -T
+```
+
 #### Deploy to production
 
 ```
