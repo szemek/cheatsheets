@@ -45,3 +45,8 @@ SHOW GRANTS FOR 'user'@'localhost';
 ```sql
 SELECT * FROM information_schema.TABLES;
 ```
+
+### Reset root password
+
+http://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html#resetting-permissions-unix
+
