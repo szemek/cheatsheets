@@ -18,6 +18,10 @@ Some git commands gathered.
 
 `git config --global branch.autosetuprebase always`
 
+#### Rebase with initial (root) commit
+
+`git rebase -i --root master`
+
 #### Force existing branches to use rebase
 
 `git config branch.branch.rebase true`
