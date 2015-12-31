@@ -37,3 +37,9 @@ vagrant halt
 ```
 vagrant destroy [-f]
 ```
+
+### Prune non-existing machines from `global-status`
+
+```
+vagrant global-status --prune
+```
