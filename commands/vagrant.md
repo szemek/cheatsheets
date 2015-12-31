@@ -43,3 +43,16 @@ vagrant destroy [-f]
 ```
 vagrant global-status --prune
 ```
+
+### Package box
+
+```
+VBoxManage list vms
+vagrant package --base VM_NAME --output NAME.box
+```
+
+### Adding box from disk
+
+```
+vagrant box add --name NAME /path/to/file.box
+```
