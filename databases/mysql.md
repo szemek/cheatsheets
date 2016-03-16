@@ -40,6 +40,16 @@ SELECT user, host FROM mysql.user;
 SHOW GRANTS FOR 'user'@'localhost';
 ```
 
+### Grant privileges
+
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'%';
+```
+
+### Adding user accounts
+
+http://dev.mysql.com/doc/refman/5.7/en/adding-users.html
+
 ### Get info about tables
 
 ```sql
