@@ -154,6 +154,12 @@ git log -L <start>,<end>:<file>
 git branch -d -r origin/<remote branch name>
 ```
 
+#### Return git root directory
+
+```
+git rev-parse --show-toplevel
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
