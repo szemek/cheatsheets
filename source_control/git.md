@@ -160,6 +160,12 @@ git branch -d -r origin/<remote branch name>
 git rev-parse --show-toplevel
 ```
 
+### Displays references refs/heads in a remote repository
+
+```
+git ls-remote --heads git@github.com:username/repository.git
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
