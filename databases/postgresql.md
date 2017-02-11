@@ -6,10 +6,16 @@ psql
 
 ## PSQL
 
-### List of databases
+### List databases
 
 ```
 \l
+```
+
+### List tables
+
+```
+\dt
 ```
 
 ### Create user
