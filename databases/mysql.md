@@ -60,3 +60,11 @@ SELECT * FROM information_schema.TABLES;
 
 http://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html#resetting-permissions-unix
 
+
+### Temporarily disable foreign key checks or constraints
+
+```sql
+SET foreign_key_checks = 0;
+-- ... query ...
+SET foreign_key_checks = 1;
+```
