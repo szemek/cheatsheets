@@ -160,10 +160,16 @@ git branch -d -r origin/<remote branch name>
 git rev-parse --show-toplevel
 ```
 
-### Displays references refs/heads in a remote repository
+### Display references refs/heads in a remote repository
 
 ```
 git ls-remote --heads git@github.com:username/repository.git
+```
+
+### Show diff like in GitHub's PR
+
+```
+git diff branch...master
 ```
 
 ## Other useful stuff
