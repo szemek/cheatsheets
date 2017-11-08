@@ -169,7 +169,7 @@ git ls-remote --heads git@github.com:username/repository.git
 ### Show diff like in GitHub's PR
 
 ```
-git diff branch...master
+git diff master...branch
 ```
 
 ## Other useful stuff
