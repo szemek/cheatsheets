@@ -68,3 +68,27 @@ SET foreign_key_checks = 0;
 -- ... query ...
 SET foreign_key_checks = 1;
 ```
+
+### Show number of currently open connections
+
+```sql
+SHOW STATUS WHERE `Variable_name` = 'Threads_connected';
+```
+
+### Show process list
+
+```sql
+SHOW PROCESSLIST;
+```
+
+### Show `max_connections` variable
+
+```sql
+SHOW VARIABLES LIKE "max_connections";
+```
+
+### Set `max_connections` variable
+
+```sql
+SET GLOBAL max_connections = 10000;
+```
