@@ -50,3 +50,15 @@ update pg_database set datistemplate = TRUE where datname = 'template1';
 \c template1
 update pg_database set datallowconn = FALSE where datname = 'template0';
 ```
+
+### Revoke connect access to database
+
+```sql
+REVOKE connect ON DATABASE database_name FROM PUBLIC;
+```
+
+### Grant connect access on database to user/role
+
+```sql
+GRANT connect ON DATABASE database_name TO rolename;
+```
