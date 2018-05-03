@@ -79,6 +79,8 @@ SHOW STATUS WHERE `Variable_name` = 'Threads_connected';
 
 ```sql
 SHOW PROCESSLIST;
+
+SELECT * FROM information_schema.processlist;
 ```
 
 ### Show `max_connections` variable
