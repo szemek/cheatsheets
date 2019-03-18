@@ -97,7 +97,7 @@ SET GLOBAL max_connections = 10000;
 
 ### Show statistics about tables, e.g number of rows, data length
 
-```
+```sql
 SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_ROWS, DATA_LENGTH
 FROM information_schema.PARTITIONS
 ORDER BY data_length DESC;
