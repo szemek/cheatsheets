@@ -46,6 +46,12 @@ SHOW GRANTS FOR 'user'@'localhost';
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'%';
 ```
 
+### Revoke privileges
+
+```sql
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM user;
+```
+
 ### Adding user accounts
 
 http://dev.mysql.com/doc/refman/5.7/en/adding-users.html
