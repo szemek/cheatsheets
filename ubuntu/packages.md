@@ -13,5 +13,5 @@ apt-get update && apt-get install -y htop
 ### dig, nslookup
 
 ```
-apt-get update && apt-get install dnsutils
+apt-get update && apt-get install -y dnsutils
 ```
