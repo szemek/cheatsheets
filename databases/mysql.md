@@ -46,6 +46,13 @@ SHOW GRANTS FOR 'user'@'localhost';
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'%';
 ```
 
+MySQL 8
+
+```sql
+CREATE USER 'user'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' WITH GRANT OPTION;
+```
+
 ### Revoke privileges
 
 ```sql
