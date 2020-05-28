@@ -69,6 +69,22 @@ http://dev.mysql.com/doc/refman/5.7/en/adding-users.html
 SELECT * FROM information_schema.TABLES;
 ```
 
+### Change user password
+
+MySQL 5.7.5 or lower
+
+```sql
+SET PASSWORD FOR 'user'@'%' = PASSWORD('password');
+```
+
+MySQL 5.7.6 or higher
+
+```sql
+ALTER USER 'user'@'%' IDENTIFIED BY 'password';
+```
+
+https://www.cyberciti.biz/faq/mysql-change-user-password/
+
 ### Reset root password
 
 http://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html#resetting-permissions-unix
