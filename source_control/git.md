@@ -178,6 +178,14 @@ git diff master...branch
 git checkout -f <sha> -- .
 ```
 
+#### Diff two files outside any repository
+
+```
+git diff --no-index <file1> <file2>
+```
+
+Reference: https://stackoverflow.com/a/19930478
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
