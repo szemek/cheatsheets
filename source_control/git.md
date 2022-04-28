@@ -192,3 +192,16 @@ Reference: https://stackoverflow.com/a/19930478
   * [hub](https://github.com/github/hub)
   * [git-up](https://github.com/aanand/git-up)
   * [git_tracker](https://github.com/stevenharman/git_tracker)
+
+#### CodeCommit SSH issues
+
+```
+Host git-codecommit.*.amazonaws.com
+   User AAAAAAAAAAAAAAAAAAAA
+   IdentityFile ~/.ssh/id_codecommit
+   # Add these to let the SSH client accept RSA keys
+   PubkeyAcceptedAlgorithms +ssh-rsa
+   HostkeyAlgorithms +ssh-rsa
+```
+
+Reference: [CodeCommit SSH issues](https://www.stephengream.com/codecommit-ssh-issues)
