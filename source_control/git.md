@@ -186,6 +186,12 @@ git diff --no-index <file1> <file2>
 
 Reference: https://stackoverflow.com/a/19930478
 
+#### Use SSH instead of HTTPS
+
+```
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
