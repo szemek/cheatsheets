@@ -83,6 +83,21 @@ git filter-branch --commit-filter '
         fi' HEAD
 ```
 
+#### Rewrite your git history - change author in interactive rebase
+
+```
+git rebase -i master
+```
+
+Change `pick` to `edit`.
+
+Repeat:
+
+```
+git commit --amend --author="Author Name <email@address.com>" --no-edit
+git rebase --continue
+```
+
 
 #### Remove unnecessary files from git history
 
