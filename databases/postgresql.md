@@ -62,3 +62,11 @@ REVOKE connect ON DATABASE database_name FROM PUBLIC;
 ```sql
 GRANT connect ON DATABASE database_name TO rolename;
 ```
+
+### Show `statement_timeout`
+
+```sql
+SELECT setting
+FROM pg_settings
+WHERE name = 'statement_timeout';
+```
