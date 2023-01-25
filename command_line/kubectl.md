@@ -11,3 +11,22 @@ kubectl get pods --no-headers -o custom-columns=":metadata.name"
 ```
 kubectl run  -it ubuntu --image=ubuntu:kinetic --restart=Never --rm -- /bin/bash
 ```
+
+#### Get resources in a namespace
+
+```
+kubectl api-resources --verbs=list --namespaced -o name \
+  | xargs -n 1 kubectl get --show-kind --ignore-not-found -n <namespace>
+```
+
+```
+kubectl get all
+```
+
+Reference: https://www.studytonight.com/post/how-to-list-all-resources-in-a-kubernetes-namespace
+
+#### Restart deployment
+
+```
+kubectl rollout restart deployment <deployment>
+```
