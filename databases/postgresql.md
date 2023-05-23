@@ -70,3 +70,14 @@ SELECT setting
 FROM pg_settings
 WHERE name = 'statement_timeout';
 ```
+
+### Terminate existing connections
+
+https://stackoverflow.com/a/5408501
+
+```sql
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'TARGET_DB' -- ← change this to your DB
+  AND pid <> pg_backend_pid();
+```
