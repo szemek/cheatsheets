@@ -32,3 +32,9 @@ Reference: https://www.studytonight.com/post/how-to-list-all-resources-in-a-kube
 ```
 kubectl rollout restart deployment <deployment>
 ```
+
+#### Delete evicted pods
+
+```
+kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod
+```
