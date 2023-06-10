@@ -207,6 +207,15 @@ Reference: https://stackoverflow.com/a/19930478
 git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 ```
 
+#### Configure line endings
+
+```
+git config --global core.autocrlf input
+git add --renormalize .
+```
+
+https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
