@@ -216,6 +216,20 @@ git add --renormalize .
 
 https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
 
+#### Use noreply email and don't sign commits
+
+```
+git config --global alias.anonymous '!bash /usr/local/bin/git-anonymous'
+```
+
+```
+#!/bin/bash
+
+git config gpg.program ""
+git config commit.gpgsign false
+git config user.email 373530+szemek@users.noreply.github.com
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
