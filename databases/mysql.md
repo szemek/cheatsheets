@@ -131,3 +131,9 @@ SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_ROWS, DATA_LENGTH
 FROM information_schema.PARTITIONS
 ORDER BY data_length DESC;
 ```
+
+### Show binary logs
+
+```sql
+SHOW BINARY LOGS;
+```
