@@ -230,6 +230,21 @@ git config commit.gpgsign false
 git config user.email 373530+szemek@users.noreply.github.com
 ```
 
+# Ignore changed line by using regular expression
+
+In `.git/config`:
+```
+[filter "ignore_development_team"]
+	clean = "sed 's/DEVELOPMENT_TEAM = .*;/DEVELOPMENT_TEAM = \"\";/'"
+	required
+```
+
+In `.git/info/attributes`:
+
+```
+*.pbxproj filter=ignore_development_team
+```
+
 ## Other useful stuff
 
   * git plugin from [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
