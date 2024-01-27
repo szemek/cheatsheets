@@ -236,13 +236,15 @@ In `.git/config`:
 ```
 [filter "ignore_development_team"]
 	clean = "sed 's/DEVELOPMENT_TEAM = .*;/DEVELOPMENT_TEAM = \"\";/'"
-	required
+[filter "remove_code_sign_identity"]
+	clean = "sed '/.*CODE_SIGN_IDENTITY.*/d'"
 ```
 
 In `.git/info/attributes`:
 
 ```
 *.pbxproj filter=ignore_development_team
+*.pbxproj filter=remove_code_sign_identity
 ```
 
 ## Other useful stuff
