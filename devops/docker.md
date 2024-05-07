@@ -25,3 +25,13 @@ docker rm -f $(docker ps -aq)
 ```
 eval $(docker-machine env default)
 ```
+
+### Copy files from Docker container to host
+
+```
+docker create --name dummy IMAGE_NAME
+docker cp dummy:/path/to/file /dest/to/file
+docker rm -f dummy
+```
+
+Reference: https://stackoverflow.com/a/22050116
