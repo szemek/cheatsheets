@@ -11,7 +11,7 @@ kubectl get pods --no-headers -o custom-columns=":metadata.name"
 #### Run interactive shell in a pod and remove a pod after exit
 
 ```
-kubectl run  -it ubuntu --image=ubuntu:kinetic --restart=Never --rm -- /bin/bash
+kubectl run  -it ubuntu --image=ubuntu:latest --restart=Never --rm -- /bin/bash
 ```
 
 #### Get resources in a namespace
