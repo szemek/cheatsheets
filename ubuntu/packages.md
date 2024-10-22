@@ -1,7 +1,7 @@
-### ps
+### dig, nslookup
 
-```bash
-apt-get update && apt-get install -y procps
+```
+apt-get update && apt-get install -y dnsutils
 ```
 
 ### htop
@@ -10,8 +10,14 @@ apt-get update && apt-get install -y procps
 apt-get update && apt-get install -y htop
 ```
 
-### dig, nslookup
+### ping
 
 ```
-apt-get update && apt-get install -y dnsutils
+apt-get update && apt-get install -y iputils-ping
+```
+
+### ps
+
+```bash
+apt-get update && apt-get install -y procps
 ```
